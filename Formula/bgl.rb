@@ -5,21 +5,21 @@
 class Bgl < Formula
   desc "Backlog CLI - A command-line interface for Backlog"
   homepage "https://github.com/dannygim/bgl"
-  version "0.1.1"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dannygim/bgl/releases/download/v0.1.1/bgl_0.1.1_darwin_amd64.tar.gz"
-      sha256 "0fc0fd77a38703a27234d490cbc07274d1caa39f3674e44ecd4a4848b212efa7"
+      url "https://github.com/dannygim/bgl/releases/download/v0.2.0/bgl_0.2.0_darwin_amd64.tar.gz"
+      sha256 "6370aae21aa07917f82b22fce45ca36400daf1952e66608a106a866b9a2a62bf"
 
       def install
         bin.install "bgl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dannygim/bgl/releases/download/v0.1.1/bgl_0.1.1_darwin_arm64.tar.gz"
-      sha256 "0423b744a67dfa38c76bf900e8ef3754d94daf76c37452356a71226b3461fe6b"
+      url "https://github.com/dannygim/bgl/releases/download/v0.2.0/bgl_0.2.0_darwin_arm64.tar.gz"
+      sha256 "10c71baf82f23555f86beb3fa2d5b030395fdabcde821fa5bbdfe45a55ade4ae"
 
       def install
         bin.install "bgl"
@@ -29,15 +29,15 @@ class Bgl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dannygim/bgl/releases/download/v0.1.1/bgl_0.1.1_linux_amd64.tar.gz"
-      sha256 "715147403d9e8617b3642c4a00e0c0c477e63245276525a11ce848c56ba96750"
+      url "https://github.com/dannygim/bgl/releases/download/v0.2.0/bgl_0.2.0_linux_amd64.tar.gz"
+      sha256 "d054c71e3525f0a5b21ede2d0b909c86484dee61441b905b8bc34364eb3836e9"
       def install
         bin.install "bgl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dannygim/bgl/releases/download/v0.1.1/bgl_0.1.1_linux_arm64.tar.gz"
-      sha256 "0984cec7378c4e25868a46811aa15333f7d4ac7728e43c7017f75a37149596b0"
+      url "https://github.com/dannygim/bgl/releases/download/v0.2.0/bgl_0.2.0_linux_arm64.tar.gz"
+      sha256 "eead5b0d9d052b8bb7ff83ebcce544b40fb6f72d1597bc950ee121331ccca844"
       def install
         bin.install "bgl"
       end
