@@ -18,14 +18,13 @@ cask "meeting-transcriber" do
   on_macos do
     on_arm do
       url "https://github.com/dannygim/meeting-transcriber/releases/download/v#{version}/meeting-transcriber_#{version}_darwin_arm64.zip"
-      sha256 "faa6ee7682209ffa3d3b06a7bd8831bad23e914873eeda7ea5f83ab359d3a557"
+      sha256 "1aa9a4a8e0c3eb151edb4daaec206d18b25c7c2b5cb17fc2c2e5e2cd7d916ebb"
     end
   end
 
   caveats do
     "You need to download a Whisper model:"
-    "  mkdir -p ~/models && curl -L -o ~/models/ggml-large-v3.bin \"
-    "    https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-large-v3.bin"
+    "  mkdir -p ~/models && curl -Lo ~/models/ggml-large-v3.bin https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-large-v3.bin"
     ""
     "Since this app is unsigned, you may need to allow it in:"
     "  System Preferences > Security & Privacy"
