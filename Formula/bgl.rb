@@ -5,23 +5,23 @@
 class Bgl < Formula
   desc "Backlog CLI - A command-line interface for Backlog"
   homepage "https://github.com/dannygim/bgl"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dannygim/bgl/releases/download/v0.2.0/bgl_0.2.0_darwin_amd64.tar.gz"
-      sha256 "6370aae21aa07917f82b22fce45ca36400daf1952e66608a106a866b9a2a62bf"
+      url "https://github.com/dannygim/bgl/releases/download/v0.3.0/bgl_0.3.0_darwin_amd64.tar.gz"
+      sha256 "67df0b51fa22ab04a592792199ad66daaf85108e0266dd21d1ae0fce20afb3c4"
 
-      def install
+      define_method(:install) do
         bin.install "bgl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dannygim/bgl/releases/download/v0.2.0/bgl_0.2.0_darwin_arm64.tar.gz"
-      sha256 "10c71baf82f23555f86beb3fa2d5b030395fdabcde821fa5bbdfe45a55ade4ae"
+      url "https://github.com/dannygim/bgl/releases/download/v0.3.0/bgl_0.3.0_darwin_arm64.tar.gz"
+      sha256 "a0aba710520fb893ec409064148440215578e33698d5f5133356f1493899064d"
 
-      def install
+      define_method(:install) do
         bin.install "bgl"
       end
     end
@@ -29,16 +29,16 @@ class Bgl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dannygim/bgl/releases/download/v0.2.0/bgl_0.2.0_linux_amd64.tar.gz"
-      sha256 "d054c71e3525f0a5b21ede2d0b909c86484dee61441b905b8bc34364eb3836e9"
-      def install
+      url "https://github.com/dannygim/bgl/releases/download/v0.3.0/bgl_0.3.0_linux_amd64.tar.gz"
+      sha256 "df27143fc5c2dda24efeb909ef9ffa5f4c9df8523d9f1f8f57a5999e5a7eabf5"
+      define_method(:install) do
         bin.install "bgl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dannygim/bgl/releases/download/v0.2.0/bgl_0.2.0_linux_arm64.tar.gz"
-      sha256 "eead5b0d9d052b8bb7ff83ebcce544b40fb6f72d1597bc950ee121331ccca844"
-      def install
+      url "https://github.com/dannygim/bgl/releases/download/v0.3.0/bgl_0.3.0_linux_arm64.tar.gz"
+      sha256 "ca950469142048087ba8c292f9c0b95e2285bba3234216571643c3232f59d1e2"
+      define_method(:install) do
         bin.install "bgl"
       end
     end
