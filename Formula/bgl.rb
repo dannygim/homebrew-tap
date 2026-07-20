@@ -5,21 +5,21 @@
 class Bgl < Formula
   desc "Backlog CLI - A command-line interface for Backlog"
   homepage "https://github.com/dannygim/bgl"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dannygim/bgl/releases/download/v0.3.0/bgl_0.3.0_darwin_amd64.tar.gz"
-      sha256 "67df0b51fa22ab04a592792199ad66daaf85108e0266dd21d1ae0fce20afb3c4"
+      url "https://github.com/dannygim/bgl/releases/download/v0.4.0/bgl_0.4.0_darwin_amd64.tar.gz"
+      sha256 "9c371bcdf462dc80d83476606addae293426a47adfb63fd9e3e9b47e9f98b80f"
 
       define_method(:install) do
         bin.install "bgl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dannygim/bgl/releases/download/v0.3.0/bgl_0.3.0_darwin_arm64.tar.gz"
-      sha256 "a0aba710520fb893ec409064148440215578e33698d5f5133356f1493899064d"
+      url "https://github.com/dannygim/bgl/releases/download/v0.4.0/bgl_0.4.0_darwin_arm64.tar.gz"
+      sha256 "cd0ab77ad392b8f11def0f92e0b52b6f429c294204cece799c7409a8c65f9739"
 
       define_method(:install) do
         bin.install "bgl"
@@ -29,15 +29,15 @@ class Bgl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dannygim/bgl/releases/download/v0.3.0/bgl_0.3.0_linux_amd64.tar.gz"
-      sha256 "df27143fc5c2dda24efeb909ef9ffa5f4c9df8523d9f1f8f57a5999e5a7eabf5"
+      url "https://github.com/dannygim/bgl/releases/download/v0.4.0/bgl_0.4.0_linux_amd64.tar.gz"
+      sha256 "499dafb1e5c1bb1c70766aab994ac72923e453577dae8258d974d406aea50a81"
       define_method(:install) do
         bin.install "bgl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dannygim/bgl/releases/download/v0.3.0/bgl_0.3.0_linux_arm64.tar.gz"
-      sha256 "ca950469142048087ba8c292f9c0b95e2285bba3234216571643c3232f59d1e2"
+      url "https://github.com/dannygim/bgl/releases/download/v0.4.0/bgl_0.4.0_linux_arm64.tar.gz"
+      sha256 "0254d3d66378b84e854a04183c40e41c3491c9a8423a9b634852cc2239a1301e"
       define_method(:install) do
         bin.install "bgl"
       end
